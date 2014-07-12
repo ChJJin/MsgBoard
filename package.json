@@ -1,0 +1,29 @@
+{
+  "name": "MsgBoard",
+  "version": "0.0.1",
+  "description": "A message board on mobile phone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChJJin/MsgBoard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChJJin/MsgBoard/issues"
+  },
+  "homepage": "https://github.com/ChJJin/MsgBoard",
+  "devDependencies": {
+    "gulp-load-plugins": "^0.5.3",
+    "gulp": "^3.8.6",
+    "gulp-html-replace": "^1.1.0",
+    "gulp-replace": "^0.4.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "^2.3.3",
+    "gulp-util": "^2.2.20",
+    "gulp-coffee": "^2.1.0"
+  }
+}
