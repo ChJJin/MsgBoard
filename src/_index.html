@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="ui-mobile-rendering">
+<head>
+  <title>留言板</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    document.write('<base href="'+location.href+'" />');
+  </script>
+  <link rel="stylesheet" href="./lib/styles/jquery.mobile-1.4.3.min.css">
+</head>
+
+<body>
+<div data-role="page">
+
+  <div data-role="header">
+    <h1>欢迎访问我的主页</h1>
+  </div>
+
+  <div data-role="content">
+    <div id='container'>
+      <ul id='message-list'>
+      </ul>
+      <a href="#" data-role="button" id="next-page">下一页</a>
+      <div>
+        <form>
+          <input type='text' id='new-msg' />
+          <input type='button' id='submit' value='提交' />
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div data-role="footer">
+    <h1>页脚文本</h1>
+  </div>
+
+</div>
+</body>
+
+<script type="text/template" id="message-item-view">
+<div>
+	<span><%= name %></span>
+	<span><%= content %></span>
+	<span><%= createdAt %></span>
+</div>
+</script>
+<script src="./lib/scripts/01.jquery-1.11.1.min.js"></script>
+<script src="./lib/scripts/01.underscore-min.js"></script>
+<script src="./lib/scripts/02.jquery.mobile-1.4.3.min.js"></script>
+<script src="./lib/scripts/03.backbone-min.js"></script>
+<script src="./scripts/app.js"></script>
+</html>
